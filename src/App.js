@@ -2,10 +2,9 @@ import React, { Fragment } from "react"; // Fragment기능을 사용
 import "./App.css";
 import Mycomponent from "./Mycomponent";
 
-
 const App = () => {
-    return <Mycomponent name="React" />;
-}
+  return <Mycomponent>호스타</Mycomponent>;
+};
 
 // function App() {
 //   const name = "리액트";
