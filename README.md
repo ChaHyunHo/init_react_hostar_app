@@ -14,4 +14,4 @@ const [one, two] = array;
 
 ~~~
 
-![img.png](img.png)
+IMG_B52622882ABF-1.jpeg![image](https://user-images.githubusercontent.com/38008152/117544339-ef67c580-b05b-11eb-94aa-4e54977f8190.png)
