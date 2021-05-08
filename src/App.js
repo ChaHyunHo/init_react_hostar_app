@@ -1,9 +1,11 @@
 import React, { Fragment } from "react"; // Fragment기능을 사용
 import "./App.css";
 import Mycomponent from "./Mycomponent";
+import PropTypes from "prop-types";
+import Counter from "./Counter";
 
 const App = () => {
-  return <Mycomponent>호스타</Mycomponent>;
+  return <Counter></Counter>;
 };
 
 // function App() {
