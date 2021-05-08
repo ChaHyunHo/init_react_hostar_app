@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// state사용
 class Counter extends Component {
   // constructor(props) {
   //   super(props); // 이 함수가 호출되면 현재 글래스형 컴포넌트가 상속받고 있는 리액트의 Component클래스가 지닌 생성자 함수를 호출해준다.

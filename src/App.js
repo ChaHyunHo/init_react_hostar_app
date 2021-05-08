@@ -3,9 +3,10 @@ import "./App.css";
 import Mycomponent from "./Mycomponent";
 import PropTypes from "prop-types";
 import Counter from "./Counter";
+import Say from "./Say";
 
 const App = () => {
-  return <Counter></Counter>;
+  return <Say></Say>;
 };
 
 // function App() {

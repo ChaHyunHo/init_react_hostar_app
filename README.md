@@ -13,3 +13,5 @@ const two = array[1]; // 기존 방시
 const [one, two] = array;
 
 ~~~
+
+![img.png](img.png)
