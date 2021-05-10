@@ -4,9 +4,13 @@ import Mycomponent from "./Mycomponent";
 import PropTypes from "prop-types";
 import Counter from "./Counter";
 import Say from "./Say";
+import EventPractice from "./EventPractice";
+import EventPracticeFn from "./EventPracticeFn";
+import ValidationSample from "./ValidationSample";
+import ValidationSampleFn from "./ValidationSampleFn";
 
 const App = () => {
-  return <Say></Say>;
+  return <ValidationSampleFn></ValidationSampleFn>;
 };
 
 // function App() {
