@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"; // Fragment기능을 사용
+import React, { Component } from "react"; // Fragment기능을 사용
 import "./App.css";
 import Mycomponent from "./Mycomponent";
 import PropTypes from "prop-types";
@@ -8,10 +8,26 @@ import EventPractice from "./EventPractice";
 import EventPracticeFn from "./EventPracticeFn";
 import ValidationSample from "./ValidationSample";
 import ValidationSampleFn from "./ValidationSampleFn";
+import RefSample from "./RefSample";
+import ScrollBox from "./ScrollBox";
 
-const App = () => {
-  return <ValidationSampleFn></ValidationSampleFn>;
-};
+// const App = () => {
+//   return <ValidationSampleFn></ValidationSampleFn>;
+// };
+
+class App extends Component {
+
+  render() {
+    return (
+      <div>
+        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+        <button onClick={() => this.scrollBox.scrollToBottom()}>
+          맨밑으로
+        </button>
+      </div>
+    );
+  }
+}
 
 // function App() {
 //   const name = "리액트";
