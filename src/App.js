@@ -10,23 +10,30 @@ import ValidationSample from "./ValidationSample";
 import ValidationSampleFn from "./ValidationSampleFn";
 import RefSample from "./RefSample";
 import ScrollBox from "./ScrollBox";
+import IterationSample from "./IterationSample";
+import IterationSampleFn from "./IterationSampleFn";
 
 // const App = () => {
 //   return <ValidationSampleFn></ValidationSampleFn>;
 // };
 
-class App extends Component {
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+//         <button onClick={() => this.scrollBox.scrollToBottom()}>맨밑으로</button>
+//       </div>
+//     );
+//   }
+// }
 
-  render() {
-    return (
-      <div>
-        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
-        <button onClick={() => this.scrollBox.scrollToBottom()}>
-          맨밑으로
-        </button>
-      </div>
-    );
-  }
+class App extends Component {
+    render() {
+        return (
+          <IterationSampleFn/>
+        );
+    }
 }
 
 // function App() {
