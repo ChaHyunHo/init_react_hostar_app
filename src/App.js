@@ -12,6 +12,7 @@ import RefSample from "./RefSample";
 import ScrollBox from "./ScrollBox";
 import IterationSample from "./IterationSample";
 import IterationSampleFn from "./IterationSampleFn";
+import LifeCycleSample from "./LifeCycleSample";
 
 // const App = () => {
 //   return <ValidationSampleFn></ValidationSampleFn>;
@@ -28,12 +29,29 @@ import IterationSampleFn from "./IterationSampleFn";
 //   }
 // }
 
+function getRandomColor() {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
+
 class App extends Component {
-    render() {
-        return (
-          <IterationSampleFn/>
-        );
-    }
+  state = {
+    color: "#000000",
+  };
+
+  handleClick = () => {
+    this.setState({
+      color: getRandomColor(),
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <button onClick={this.handleClick}>랜덤 색상</button>
+        <LifeCycleSample color={this.state.color} />
+      </div>
+    );
+  }
 }
 
 // function App() {
